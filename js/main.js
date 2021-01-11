@@ -313,7 +313,7 @@ function form_minute(cday, cdmin)
     }
     main.tt_p = tt;
     
-    console.log("urok:", jj, ", tt:" + tt);
+    //console.log("urok:", jj, ", tt:" + tt);
      
   }
 }
