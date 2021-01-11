@@ -2,7 +2,7 @@
 
 if ('serviceWorker' in navigator)
 {
-  navigator.serviceWorker.register('jssw/sw.js').then( (registration)=> {
+  navigator.serviceWorker.register('jssw/sw.js', {scope: '.'}).then( (registration)=> {
     console.log('Service worker registration successful, scope is:', registration.scope);
   })
   .catch( (error)=> {
