@@ -30,7 +30,7 @@ $(document).on("pagecreate", "#index", function() {
 function main()
 {
   main.version_main = 1
-  main.version_sub = 0
+  main.version_sub = 1
     
   main.rasp = {
     0: 0,
@@ -93,6 +93,8 @@ function main()
   main.tt_p = -1;
   main.cday_list = 0;
   
+  main.sec_blink = true;
+  
   //----------------------------------
   
   $("#acr-urv-id-data").click(function() {
@@ -111,6 +113,7 @@ function form_time_minutes()
 {
   main.days = ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'];
   main.month = ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+  main.monthe = ['Января','Февраля','Марта','Апреля','Мая','Июня','Июля','Августа','Сентября','Октября','Ноября','Декабря'];
   
   for(var i = 0; i < 7; i++)
   {
@@ -142,7 +145,12 @@ function clock_sec()
   ch = cdt.getHours();
   cm = cdt.getMinutes();
   
+  if (main.sec_blink) $("#spanid-time-razd").removeClass("acr-urv-ui-color-red");
+  else $("#spanid-time-razd").addClass("acr-urv-ui-color-red");
+  main.sec_blink = !main.sec_blink;
+  
   on_time_event(cday, ch, cm);
+  
 }
 
 function on_time_event(cday, ch, cm)
@@ -156,7 +164,7 @@ function on_time_event(cday, ch, cm)
     md = cdt.getDate();
     mn = cdt.getMonth();
     
-    $('#acr-urv-id-data').text( md + " " + main.month[mn] )
+    $('#acr-urv-id-data').text( md + " " + main.monthe[mn] + " " + main.days [cday] )
  
     form_urok_list();
     
@@ -166,8 +174,9 @@ function on_time_event(cday, ch, cm)
   cdmin = (ch * 60) + cm
   if (cdmin != main.cdmin_p)
   { // on minute begin
-    
-    $('#acr-urv-id-time').text( int2str(ch) + ":" + int2str(cm) )
+        
+    $('#spanid-time-hour').text( int2str(ch) );
+    $('#spanid-time-min').text( int2str(cm) );
     
     form_minute(cday, cdmin)
     main.cdmin_p = cdmin;
@@ -250,6 +259,9 @@ function form_minute(cday, cdmin)
         $('#acr-urv-id-ttext').text( " уроки закончены " );
         $('#acr-urv-id-utime').text( " -- " );
         
+        $('#acr-urv-id-ttext').removeClass("acr-urv-ui-color-green acr-urv-ui-color-blue");
+        $('#acr-urv-id-utime').removeClass("acr-urv-ui-color-green acr-urv-ui-color-blue");
+        
         if (main.tt_p == 2)
         {
           main.audio2.play();
@@ -263,6 +275,13 @@ function form_minute(cday, cdmin)
         $('#acr-urv-id-ut-'+jj).addClass('acr-urv-ui-border-blue');
         $('#acr-urv-id-ttext').text( "До начала урока" );
         $('#acr-urv-id-utime').text( int2str(tto) );
+        
+        $('#acr-urv-id-ttext').removeClass("acr-urv-ui-color-green acr-urv-ui-color-blue");
+        $('#acr-urv-id-ttext').addClass("acr-urv-ui-color-blue");
+
+        $('#acr-urv-id-utime').removeClass("acr-urv-ui-color-green acr-urv-ui-color-blue");
+        $('#acr-urv-id-utime').addClass("acr-urv-ui-color-blue");
+
         
         if (tto == 3)
         {
@@ -289,6 +308,13 @@ function form_minute(cday, cdmin)
         $("#acr-urv-id-ut-"+jj).addClass("acr-urv-ui-border-green");
         $('#acr-urv-id-ttext').text( "До конца урока" );
         $('#acr-urv-id-utime').text( int2str(tto) );
+        
+        $('#acr-urv-id-ttext').removeClass("acr-urv-ui-color-green acr-urv-ui-color-blue");
+        $('#acr-urv-id-ttext').addClass("acr-urv-ui-color-green");
+
+        $('#acr-urv-id-utime').removeClass("acr-urv-ui-color-green acr-urv-ui-color-blue");
+        $('#acr-urv-id-utime').addClass("acr-urv-ui-color-green");
+
         
         if (tto == 3)
         {

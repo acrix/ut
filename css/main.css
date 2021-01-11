@@ -47,7 +47,7 @@ body
 
 .acr-urv-ui-border-blue
 {
- border: 1px dashed blue;
+ border: 3px dashed blue;
 
 }
 
@@ -63,5 +63,22 @@ body
  font-size: 6.0em;
 
 }
+
+.acr-urv-ui-color-green
+{
+  color: #5CDB95;
+
+}
+
+.acr-urv-ui-color-blue
+{
+  color: #659DBD;
+}
+
+.acr-urv-ui-color-red
+{
+  color: #F01010;
+}
+
 
 

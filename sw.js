@@ -1,5 +1,5 @@
 
-version = "0.7a";
+version = "1.1";
 cache_name = "ut_" + version;
 
 
