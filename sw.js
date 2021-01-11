@@ -1,9 +1,12 @@
 
-version = "0.6a";
+version = "0.7a";
 cache_name = "ut_" + version;
 
 
 app_shell_files = [
+
+'./',
+'favicon.ico',
 
 "css/font_anonymous.css",
 "css/font_open_sans.css",
