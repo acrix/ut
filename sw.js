@@ -4,17 +4,13 @@ cache_name = "ut_" + version;
 
 
 app_shell_files = [
-"css/",
+
 "css/font_anonymous.css",
 "css/font_open_sans.css",
 "css/main.css",
-"css/themes/",
-"css/themes/default/"
 "css/themes/default/jquery.mobile.min.css",
-"css/themes/default/images/",
 "css/themes/default/images/ajax-loader.gif",
 
-"fonts/",
 "fonts/anonymous-pro-v14-latin-ext_latin_cyrillic-700.eot",
 "fonts/anonymous-pro-v14-latin-ext_latin_cyrillic-700italic.eot",
 "fonts/anonymous-pro-v14-latin-ext_latin_cyrillic-700italic.svg",
@@ -41,12 +37,10 @@ app_shell_files = [
 "fonts/open-sans-v18-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff",
 "fonts/open-sans-v18-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2",
 
-"js/",
 "js/jquery.min.js",
 "js/jquery.mobile.min.js",
 "js/main.js",
 
-"sounds/",
 "sounds/school-ring-2.wav",
 "sounds/uprising3.wav",
 ]
