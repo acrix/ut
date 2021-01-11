@@ -8,6 +8,9 @@ app_shell_files = [
 './',
 'favicon.ico',
 
+"images/icons/icon1-256.png",
+"images/icons/icon1-512.png",
+
 "css/font_anonymous.css",
 "css/font_open_sans.css",
 "css/main.css",
