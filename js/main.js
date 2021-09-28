@@ -30,8 +30,8 @@ $(document).on("pagecreate", "#index", function() {
 function main()
 {
   main.version_desc = "2021-2022"
-  main.version_main = 1
-  main.version_sub = 2
+  main.version_main = 2
+  main.version_sub = 0
 
   
   main.rasp = {
