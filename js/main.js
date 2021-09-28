@@ -1,30 +1,11 @@
 
-
-$(document).ready(function() {
+Zepto(function($){
   console.log("DOM ready");
   
-  if ('serviceWorker' in navigator)
-  {
-    navigator.serviceWorker.register('sw.js').then( (registration)=> {
-      console.log('Service worker registration successful, scope is:', registration.scope);
-    })
-    .catch( (error)=> {
-      console.log('Service worker registration failed, error:', error);
-    });
-  }
-
-});
-
-$(document).on("mobileinit", function() {
-  console.log("mobileinit");
-});
-
-$(document).on("pagecreate", "#index", function() {
-  console.log("pagecreate - #index");
-  console.log("start main()");
+  ServiceWorkerReg();
+  
   main();
-});
-
+})
 
 
 function main()
