@@ -1,55 +1,23 @@
 
-.acr-urv-ui-grid
+.acr-urv-ui-color-red
 {
- overflow: hidden;
-}
-
-.acr-urv-ui-grid .ui-block-a
-{
- float: left;
-
-}
-.acr-urv-ui-grid .ui-block-b
-{
- float: left;
-
-}
-
-p
-{
- margin-block-start: .3em;
- margin-block-end: .3em;
-}
-
-body
-{
- font-family: 'Anonymous Pro';
- font-size: 1.2em;
-
-}
-
-.text_bold
-{
- font-weight: bold;
-
-}
-
-.center
-{
-  text-align:center;
+  color: #F01010;
 }
 
 .acr-urv-ui-border-green
 {
- border: 3px double green;
+  border: 3px double green;
 
 }
 
 .acr-urv-ui-border-blue
 {
- border: 2px dashed blue;
+  border: 2px dashed blue;
 
 }
+
+
+
 
 
 .acr-urv-ui-big-text1
@@ -75,10 +43,6 @@ body
   color: #659DBD;
 }
 
-.acr-urv-ui-color-red
-{
-  color: #F01010;
-}
 
 
 

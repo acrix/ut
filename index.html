@@ -17,100 +17,69 @@
  <script src="js/zepto.min.js"></script>
  <script src="js/main.js"></script>
 
-
 </head>
+
 <body>
 
-<div data-role="page" id="index" class="ui-page-theme-b">
 
 
-<div role="main" class="ui-content">
+<div id="page1" class="page1">
 
-<div class="acr-urv-ui-grid">
+  <div class="page1__info_head_cur_dt acr_panel">
+   <div id="date_text" class="page1__info_head_cur_dt_date acr_panel_i center">
+    --
+   </div>
+   <div class="page1__info_head_cur_dt_clock acr_panel_i center clock_line">
+    <span id='spanid-time-hour'>00</span><span id='spanid-time-razd'>:</span><span id='spanid-time-min'>00</span>
+   </div>
+  </div>
 
-<div class="ui-block-a">
 
+  <div class="page1__info_head_cur_info acr_panel">
 
- <div class="ui-block-b">
-  <div class="ui-body ui-body-b ui-corner-all">
+   <div id="page1__info_head_cur_info_text" class="page1__info_head_cur_info_text">
+     <div id="page1__info_head_cur_info_text_line" class="page1__info_head_cur_info_text_line acr_panel_i right">
+    Перемена, до урока:
+     </div>
+   </div>
 
-      <div class="ui-body ui-body-b ui-corner-all">
-
-        <p id="acr-urv-id-data" class="center acr-urv-ui-big-text1">Дата</p>
-        <p id="acr-urv-id-time" class="center acr-urv-ui-big-text1"><span id="spanid-time-hour">00</span><span id="spanid-time-razd">:</span><span id="spanid-time-min">00</span></p>
-
-      </div>
-
-      <div class="ui-body ui-body-b ui-corner-all">
-
-        <p id="acr-urv-id-ttext" class="center acr-urv-ui-big-text1"> - - </p>
-        <p id="acr-urv-id-utime" class="center acr-urv-ui-big-text2"> - - </p>
-
-      </div>
+   <div class="page1__info_head_cur_info_minutes_do center minutes-do">
+     <span id="page1__info_head_cur_info_minutes_do_text" class="acr-badge"></span>
+   </div>
 
   </div>
- </div>
 
+  <div id="day_text" class="page1__info_den acr_panel center">
+  --
+  </div>
+
+  <div id='page1__info_list' class="page1__info_list acr_panel">
   
- <div class="ui-body ui-body-b ui-corner-all">
+   <div class="page1__info_list_item acr_panel_u">
+
+    <div class="page1__info_list_item_time acr_panel_u_time right">
+    08:00-08:40
+    </div>
+
+    <div class="page1__info_list_item_text">
+    7М Русская словесность А403
+    </div>
+
+   </div>
+
    
-  <div id="acr-urv-id-ut-1" class="ui-body ui-body-b ui-corner-all">
-   <p class="text_bold"> x </p>
-   <p> x </p>
-  </div>
-  
-  <div id="acr-urv-id-ut-2" class="ui-body ui-body-b ui-corner-all">
-   <p class="text_bold"> x </p>
-   <p> x </p>
-  </div>
-  
-  <div id="acr-urv-id-ut-3" class="ui-body ui-body-b ui-corner-all">
-   <p class="text_bold"> x </p>
-   <p> x </p>
-  </div>
-  
-  <div id="acr-urv-id-ut-4" class="ui-body ui-body-b ui-corner-all">
-   <p class="text_bold"> x </p>
-   <p> x </p>
-  </div>
-  
-  <div id="acr-urv-id-ut-5" class="ui-body ui-body-b ui-corner-all">
-   <p class="text_bold"> x </p>
-   <p> x </p>
   </div>
 
-  <div id="acr-urv-id-ut-6" class="ui-body ui-body-b ui-corner-all">
-   <p class="text_bold"> x </p>
-   <p> x </p>
+  <div id="footer" class="page1__info_footer acr_panel">
+  footer
   </div>
 
- </div>
-</div>
+</div> <!-- /page1 -->
 
 
-</div><!-- /grid-a -->
 
-</div><!-- /ui-content -->
-</div><!-- /page index -->
-
-
-<div data-role="page" id="settings" class="ui-page-theme">
-<div role="main" class="ui-content">
-  
-<div class="ui-block">
-  <div class="ui-body ui-corner-all">
-  </div>
-  <div class="ui-body ui-corner-all">
-  </div>
-</div>
-  
-  
-</div><!-- /content -->  
-</div><!-- /page settings -->
-  
-
-<audio id="acr-urv-id-audio-prebuzz" src="sounds/uprising3.wav" preload="auto">
-<audio id="acr-urv-id-audio-buzz" src="sounds/school-ring-2.wav" preload="auto">
+<audio id="acr-urv-id-audio-prebuzz" src="sounds/uprising3.wav">
+<audio id="acr-urv-id-audio-buzz" src="sounds/school-ring-2.wav">
 
 
 </body>

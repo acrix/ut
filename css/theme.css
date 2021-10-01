@@ -1,0 +1,267 @@
+/* CORE */
+
+*,
+*::before,
+*::after
+{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: Georgia, serif;
+  color:#DDFFDD;
+  background-color:#09002F;
+
+}
+
+html{overflow-x:hidden}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+/* POSITIONING */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+
+.acr_panel
+{
+  border: 2px solid #10007F;
+  border-radius: 0.2rem;
+
+  background-color:#05003F;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+  
+  font-size: 1.3rem;
+  font-weight: 400;
+  
+  padding: 0.1rem;
+  margin: 0.1rem;
+}
+
+.acr_panel_i
+{
+  padding: 0.1rem;
+  margin: 0.1rem;
+}
+
+.acr_panel_u
+{
+  font-size: 1.0rem;
+  border: 1px solid #00002F;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  
+}
+
+.acr_panel_u_time
+{
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+}
+
+
+.clock_line
+{
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+}
+
+.minutes-do
+{
+  font-family: 'Courier New', monospace;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+
+.acr-badge
+{
+  background-color: #5F3F00;
+  color: #fff;
+  display: inline-block;
+  padding: 0.8rem;
+
+  text-align: center;
+  border-radius: 50%;
+}
+
+.page1
+{
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  min-height: 100%;
+  
+  opacity: 0;
+  
+}
+
+.page1-anim-show
+{
+  animation: 2s ease-in-out page1-show;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes page1-show { from { opacity:0; } to { opacity:1; }  }
+
+
+.page1__info_head_cur_dt
+{
+  display: flex;
+  align-items: center;
+}
+.page1__info_head_cur_dt_date
+{
+  flex: 10;
+}
+
+.page1__info_head_cur_dt_clock
+{
+  flex: 3;
+}
+
+.page1__info_head_cur_info
+{
+  display: flex;
+}
+
+
+.page1__info_head_cur_info_text
+{
+  flex: 10;
+  
+  margin: 0.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page1__info_head_cur_info_text_line
+{
+  padding: 0.5rem;
+}
+
+
+.page1__info_head_cur_info_minutes_do
+{
+  flex: 3;
+}
+
+.page1__info_den
+{
+  
+}
+
+.page1__info_list
+{
+  flex: 1;
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.page1__info_list_item
+{
+  display: flex;
+  gap: 0.6rem;
+}
+
+.page1__info_list_item_time
+{
+  flex: 1;
+}
+
+.page1__info_list_item_text
+{
+  flex: 2;
+}
+
+.page1__info_footer
+{
+  font-size: 0.8rem;
+  
+}
+
+
+@media only screen and (min-width: 650px)
+{
+
+.page1
+{
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+}
+
+
+
