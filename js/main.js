@@ -256,9 +256,6 @@ function form_minute(cday, cdmin)
     main.tt_p = tt;
 
 
-
-
-    
   }
 }
 
